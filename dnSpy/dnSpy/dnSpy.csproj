@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\..\DnSpyCommon.props" />
 
@@ -27,7 +27,7 @@
     <DefineConstants>NETSTANDARD</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('$(TargetFramework)', '^netcoreapp\d'))">
-    <DefineConstants>NETCORE</DefineConstants>
+    <DefineConstants>NETCOREAPP</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup>
