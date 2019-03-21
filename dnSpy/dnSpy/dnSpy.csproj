@@ -25,10 +25,6 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net472|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NETFRAMEWORK</DefineConstants>
-  </PropertyGroup>
-
   <ItemGroup Condition=" '$(IsDotNetFramework)' == 'true' ">
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationFramework.Aero" />
